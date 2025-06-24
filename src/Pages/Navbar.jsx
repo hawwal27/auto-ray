@@ -27,6 +27,14 @@ const Navbar = () => {
 
         {/* Desktop Nav */}
         <nav className="hidden md:flex space-x-6 text-sm text-blue-600 font-semibold ml-10">
+          <Link
+            to="top"
+            smooth={true}
+            duration={500}
+            className="cursor-pointer hover:text-blue-800"
+          >
+            Home
+          </Link>
           {['about', 'services', 'parts', 'contact', 'testimonial', 'faq'].map(section => (
             <Link
               key={section}
@@ -72,6 +80,15 @@ const Navbar = () => {
       {isOpen && (
         <div className="md:hidden bg-white px-6 pb-4 space-y-4 shadow-md">
           <nav className="flex flex-col space-y-3 text-blue-600 font-medium">
+            <Link
+              to="top"
+              smooth={true}
+              duration={500}
+              onClick={closeMenu}
+              className="cursor-pointer hover:text-blue-800"
+            >
+              Home
+            </Link>
             {['about', 'services', 'parts', 'contact', 'testimonial', 'faq'].map(section => (
               <Link
                 key={section}
@@ -85,6 +102,7 @@ const Navbar = () => {
               </Link>
             ))}
           </nav>
+
           <div className="flex flex-col space-y-2 pt-4">
             {isSignedIn ? (
               <UserButton afterSignOutUrl="/" />

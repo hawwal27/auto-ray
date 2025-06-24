@@ -5,7 +5,7 @@ import { FaQuoteLeft } from 'react-icons/fa';
  const testimonials = [
     {
       name: "Mr faruq.",
-      text: "CarFixPro saved me over #500 on repairs. Super fast service and great communication!",
+      text: "Autoray saved me over #500 on repairs. Super fast service and great communication!",
       image: "https://th.bing.com/th/id/OIP.3QHY0nAOPFEJ1Suv75NVagHaLL?rs=1&pid=ImgDetMain"
     },
     {
@@ -25,7 +25,7 @@ import { FaQuoteLeft } from 'react-icons/fa';
     },
      {
       name: "Mr faruq.",
-      text: "CarFixPro saved me over #500 on repairs. Super fast service and great communication!",
+      text: "Autoray saved me over #500 on repairs. Super fast service and great communication!",
       image: "https://th.bing.com/th/id/OIP.AFZivgUUqrKu978q4xpQFAHaEo?w=768&h=480&rs=1&pid=ImgDetMain"
     },
   ];

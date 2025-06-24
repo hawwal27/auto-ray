@@ -8,7 +8,7 @@ const AboutUs = () => {
           About Autoray
         </h2>
         <p className="text-center text-gray-600 text-lg max-w-3xl mx-auto">
-          At CarFixPro, we specialize in providing top-quality auto parts and expert repair services. 
+          At Autoray, we specialize in providing top-quality auto parts and expert repair services. 
           With over 10 years of experience, our mission is to keep your vehicle running like new with fast, 
           affordable, and reliable solutions.
         </p>
