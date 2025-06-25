@@ -47,18 +47,24 @@ const Hero = () => {
     <section className="min-h-screen w-full flex flex-col md:flex-row">
       
       {/* Left - Text */}
-      <div className="w-full md:w-1/2 flex flex-col justify-center px-8 md:px-16 bg-gray-100">
+      <div className="w-full md:w-1/2 flex flex-col justify-center px-6 sm:px-8 md:px-16 bg-gray-100 pt-12 pb-16">
         <h1 className="text-4xl md:text-5xl font-bold text-gray-800 leading-tight">
           Fast & Reliable <span className="text-blue-600">Car Repairs</span> and Quality Parts
         </h1>
         <p className="text-gray-600 mt-4 text-lg">
           Your trusted auto partner — from engine fixes to affordable spare parts.
         </p>
-        <div className="mt-6 space-x-4">
-          <Link to='/BookRepair' className="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition">
+        <div className="mt-6 flex flex-col sm:flex-row sm:space-x-4 space-y-4 sm:space-y-0 w-full max-w-sm">
+          <Link
+            to='/BookRepair'
+            className="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition text-center"
+          >
             Book Repair
           </Link>
-          <Link to='/Shop' className="bg-white border border-blue-600 text-blue-600 px-6 py-3 rounded-lg hover:bg-blue-50 transition">
+          <Link
+            to='/Shop'
+            className="bg-white border border-blue-600 text-blue-600 px-6 py-3 rounded-lg hover:bg-blue-50 transition text-center"
+          >
             Shop Parts
           </Link>
         </div>
@@ -83,7 +89,7 @@ const Hero = () => {
                 <img
                   src={item.img}
                   alt={item.name}
-                  className="h-[600px] object-contain mb-6"
+                  className="h-[400px] md:h-[600px] object-contain mb-6"
                 />
                 <h2 className="text-2xl font-semibold">{item.name}</h2>
                 <p className="text-gray-500 text-center max-w-md">{item.desc}</p>
