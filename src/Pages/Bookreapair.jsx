@@ -119,6 +119,7 @@ const BookRepair = () => {
           </select>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <label htmlFor="">Date</label>
             <input
               type="date"
               name="preferredDate"
@@ -127,17 +128,11 @@ const BookRepair = () => {
               required
               className="p-3 border rounded"
             />
-            <input
-              type="time"
-              name="preferredTime"
-              value={formData.preferredTime}
-              onChange={handleChange}
-              className="p-3 border rounded"
-            />
+          
           </div>
 
           <textarea
-            name="notes"
+            name="notes"uuu
             value={formData.notes}
             onChange={handleChange}
             placeholder="Additional details or symptoms"
